@@ -1,0 +1,22 @@
+﻿<div class="row">
+            <a href="/AddUpdateEmployee">Add Employee</a>
+        </div>
+         <div class="row">
+            <div class="col-xs-2">Name</div>
+            <div class="col-xs-1">Age</div>
+            <div class="col-xs-1">Gender</div>
+            <div class="col-xs-4">Message</div>
+            <div class="col-xs-3">
+                
+            </div>
+        </div>
+        <div ng-repeat="employee in employees" class="row">
+            <div class="col-xs-2">{{employee.name}}</div>
+            <div class="col-xs-1">{{employee.age}}</div>
+            <div class="col-xs-1">{{employee.gender}}</div>
+            <div class="col-xs-4">{{employee.message}}</div>
+            <div class="col-xs-3">
+                <a href="/AddUpdateEmployee">Edit</a>
+                <input type="button" value="Delete" />
+            </div>
+        </div>
